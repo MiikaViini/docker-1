@@ -9,4 +9,10 @@ ONBUILD RUN
 ONBUILD RUN rake db:migrate
 ONBUILD RUN rake db:seed
 
-# git clone https://github.com/learnenough/sample_app_6th_ed.git app
+# git clone https://github.com/MiikaViini/railsapp.git app for application
+# docker build -t ft-rails:on-build .
+# then make Dockerfile of the subject.
+# docker build -t ex02 .
+# then docker run -it --rm -p 3000:3000 ex02
+# go localhost:3000\tasks
+# there you see todo application

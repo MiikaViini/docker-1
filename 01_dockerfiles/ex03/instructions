@@ -28,11 +28,13 @@
 # To print password: docker exec -it gitlab cat /etc/gitlab/initial_root_password
 
 # Testing HTTPS
-# create an empty repository in localhost:8443 & git clone. create a file and try git push.
+# create an empty repository in localhost:8443 & git -c http.sslVerify=false clone.
+# Create a file for example, and try git -c http.sslVerify=false push.
+# If you try push or clone via https without http.sslVerify=false, there could be issues.
 
 # Testing ssh
 # run ssh-keygen -t ed25519 (safer than RSA) and copy it to gitlab
-# git clone like normal.
+# git clone like
 
 # -- INSTALLATION PACKAGE --
 # non-interactive -> used when zero interaction while installing or upgrading the system via apt. It accepts the default answer for all questions. It might mail an error message to the root user. One can use such mode in Dockerfile, shell scripts, cloud-init script, and more.
