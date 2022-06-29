@@ -1,0 +1,5 @@
+# Create VM with VirtualBox per usual
+# Set static Ip to VM
+# Create swarm with VM and let the VM be manager
+# Then host can join swarm with join-token given earlier
+# run: docker swarm join --token <TOKEN>
