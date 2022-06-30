@@ -1,7 +1,7 @@
 
 # 1. Build image: docker build -t gitlab .
 # 2. Run image: docker run --rm -it -p 8443:443 -p 8022:22 --name gitlab --privileged gitlab
-# 3. Wait until you start seeing console logging of gitlab. That means it's fully running
+# 3. Wait until gitLab is configurated
 # 4. Get the gitlab root user password: docker exec -it gitlab cat /etc/gitlab/initial_root_password
 # 5. Login to gitlab in browser: https://localhost:8443 with user 'root' and password from previous step
 # 6. Navigate to https://localhost:8443/projects/new and create a blank project
