@@ -1,20 +1,25 @@
 #!/bin/bash
 
-clear
-
-echo "Welcome"
-
-read
+RED='\e[1;31m'
+CYAN='\e[1;36m'
+NC=' \e[0m'
 
 clear
 
-echo -e "Choose your game \n"
-echo -e "1.Bastet\n"
-echo -e "2.Ninvaders\n"
-echo -e "3.Pacman\n"
-echo -e "4.Snake\n"
-echo -e "5.Greed\n"
-echo -e "0.Exit\n"
+echo  -e "\033[33;5;7mWELCOME TO LINUX GAMECENTER!\033[0m"
+
+read -n 1
+
+clear
+
+
+echo -e "\e[1;31mChoose your game \n"
+echo -e "${CYAN}1.Bastet"
+echo -e "2.Ninvaders"
+echo -e "3.Pacman"
+echo -e "4.Snake"
+echo -e "5.Greed${NC}"
+echo -e "${RED}0.Exit${NC}"
 
 read -n 1 game
 
@@ -53,14 +58,13 @@ do
 
 	clear
 
-	echo -e "Choose your game \n"
-	echo -e "1.Bastet\n"
-	echo -e "2.Ninvaders\n"
-	echo -e "3.Pacman\n"
-	echo -e "4.Snake\n"
-	echo -e "5.Greed\n"
-	echo -e "0.Exit\n"
-
+	echo -e "\e[1;31mChoose your game \n"
+	echo -e "${CYAN}1.Bastet"
+	echo -e "2.Ninvaders"
+	echo -e "3.Pacman"
+	echo -e "4.Snake"
+	echo -e "5.Greed${NC}"
+	echo -e "${RED}0.Exit${NC}"
 
 	read -n 1 game
 done
