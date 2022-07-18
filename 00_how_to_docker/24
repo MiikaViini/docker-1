@@ -1,1 +1,3 @@
 docker service logs -f $(docker service ps -q engineering-bay | head -n 1)
+# for second run: docker service logs -f $(docker service ps -q engineering-bay | tail -n 1)
+# for all tasks: docker service logs engineering-bay
