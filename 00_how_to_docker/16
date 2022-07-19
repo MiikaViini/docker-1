@@ -1,4 +1,4 @@
 docker run -itd --name Abathur -v ~/:/root -p 3000:3000 python:2-slim
 docker exec Abathur pip install Flask
-docker cp ~/workspace/mypython.py Abathur:/root
+echo -e "import pip\npip.main(['install ', 'flask'])\nfrom flask import Flask\napp = Flask(__name__)\n@app.route('/')\ndef hello_world():\n\treturn '<h1>Hello World<h1>'\n\nif __name__ == '__main__':\n\tapp.run(host='0.0.0.0', port=3000)" > mypython.py
 docker exec -e FLASK_APP=/root/mypython.py Abathur flask run --host=0.0.0.0 --port 3000

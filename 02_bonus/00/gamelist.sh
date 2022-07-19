@@ -8,7 +8,7 @@ clear
 
 echo  -e "\033[33;5;7mWELCOME TO LINUX GAMECENTER!\033[0m"
 
-read -n 1
+read -s -n 1
 
 clear
 
@@ -40,7 +40,7 @@ do
 
 	if [ "$game" == 3 ]
 		then
-			/usr/games/pacman4console
+			/usr/games/backgammon
 			game=0
 	fi
 
@@ -61,12 +61,14 @@ do
 	echo -e "\e[1;31mChoose your game \n"
 	echo -e "${CYAN}1.Bastet"
 	echo -e "2.Ninvaders"
-	echo -e "3.Pacman"
+	echo -e "3.Backgammon"
 	echo -e "4.Snake"
 	echo -e "5.Greed${NC}"
 	echo -e "${RED}0.Exit${NC}"
 
-	read -n 1 game
+	read -s -n 1 game
 done
+
+clear
 
 echo -e "Bye bye\n"

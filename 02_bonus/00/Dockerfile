@@ -1,7 +1,7 @@
 FROM debian
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install bastet ninvaders pacman4console nsnake greed -y
+RUN apt-get install bastet ninvaders bsdgames nsnake greed -y
 
 COPY gamelist.sh /
 

@@ -1,3 +1,4 @@
+# Using debian image
 FROM debian
 
 # Accepting licenses

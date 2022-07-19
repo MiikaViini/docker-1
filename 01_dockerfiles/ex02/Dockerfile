@@ -1,6 +1,8 @@
+# Using ruby
 FROM ruby:3.0.0
 RUN apt-get update -y && apt-get install -y build-essential libpq-dev nodejs sqlite3
 
+# Using on build, might not have all info in start
 ONBUILD COPY app /opt/app
 ONBUILD WORKDIR /opt/app
 
@@ -16,10 +18,10 @@ ONBUILD RUN rake db:seed
 
 
 # run this in your host terminal:
-# echo -e "FROM ft-rails:on-build\nEXPOSE 3000\nCMD [ \"rails\" , \"s\", \"-b\", \"0.0.0.0\", \"-p\", \"3000\"]" >> Dockerfile.rail
+# echo -e "FROM ft-rails:on-build\nEXPOSE 3000\nCMD [ \"rails\" , \"s\", \"-b\", \"0.0.0.0\", \"-p\", \"3000\"]" >> Dockerfile.rails
 
 # Then build it like so: 
-# docker build -f Dockerfile.rails -t ex02
+# docker build -f Dockerfile.rails -t ex02 .
 
 
 # then docker run -it --rm -p 3000:3000 ex02
