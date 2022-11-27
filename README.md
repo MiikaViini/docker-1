@@ -6,3 +6,5 @@ Basic Docker exercises to get know with subject
 01_dockerfiles, introduces basic use and creation of Dockerfile
 
 02_bonus, we had change to create our own Dockerfiles and our peers rated as they see fit
+
+Completed 125/100 points.
