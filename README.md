@@ -1,10 +1,14 @@
 # docker-1
-Basic Docker exercises to get know with subject
 
-00_how_to_docker, introduces basic cli commands to operate with docker
+Docker exercises to get familiar with containers
 
-01_dockerfiles, introduces basic use and creation of Dockerfile
-
-02_bonus, we had change to create our own Dockerfiles and our peers rated as they see fit
-
-Completed 125/100 points.
+### 00_how_to_docker
+Introduces basic cli commands to operate with docker
+#
+### 01_dockerfiles
+Introduces basic use and creation of Dockerfile
+#
+### 02_bonus
+We had chance to create our own Dockerfiles and our peers rated as they see fit
+#
+Completed `125/100` points.
